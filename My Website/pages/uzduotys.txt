@@ -1,0 +1,13 @@
+Prietaisu skydas > Nustatymai
+	Prideti puslapiai mygtuka
+	Prideti prietaisai mygtuka
+	Dizainas: Padaryti dropdown vietoj module ant nustatymai mygtuko
+
+Suprogramuoti "Puslapiai" puslapi:
+Dvi kategorijos - systemos puslapiai ir vartotojo puslapiai
+Systemos puslapiai - Lentele rodanty sidebaro puslapius kurie yra kiekvienam vartotojui
+prieinami. Traukti info is duomenu bazes. Lenteles forma - Pavadinimas, Linkas, Pozicija, Valdymas:
+Pavadinimas - puslapio pavadinimas (PROBLEMA: Neina i duombaze irasyti lietuvisku raidziu, padaryti jog veiktu utf-8). 
+Linkas - Nuoroda i puslapi, pateikti kaip <a> tik pavadinti Linkas, o ne visa nuoroda deti.
+Pozicija - Tos nuorodos esama pozicija sidebare, jei 1 tai virsuje, jei 2 tai po 1 nuorodos...
+Valdymas - Mygtukas pozicijos keitimui. Mygtukas puslapio rodymo isjungimui, jog nebebutu sidebare.
