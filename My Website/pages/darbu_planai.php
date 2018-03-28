@@ -105,6 +105,7 @@
                         <div class="page-header">
                             <h1 style="display: inline;">Darbu Planai</h1>
                             <button class="btn btn-primary pull-right" data-toggle="modal" data-target="#naujasPlanas">Naujas Planas</button>
+                            <button class="btn btn-primary pull-right" style="margin-right: 5px;">Naujas Planas <kbd>V2</kbd></button>
                         </div>
                     </div>
                     <!-- /.col-lg-12 -->
