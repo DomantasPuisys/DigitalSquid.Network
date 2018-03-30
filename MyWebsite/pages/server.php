@@ -1,6 +1,12 @@
 <?php
 session_start();
 
+// kol viskas kuriasi keiciu file permisions
+// /users/ i 777
+// server.php i 777
+// sukurtas folderis
+// d--------x  2 daemon daemon 4096 Kov 31 01:40 test2/
+
 // initializing variables
 $username = "";
 $email = "";
@@ -8,8 +14,6 @@ $errors = array();
 
 // connect to the database
 $db = mysqli_connect('localhost', 'root', '', 'dashboard');
-
-echo realpath(dirname(__FILE__));
 
 // REGISTER USER
 if (isset($_POST['reg_user'])) {
@@ -53,6 +57,8 @@ if (isset($_POST['reg_user'])) {
   			  VALUES('$username', '$email', '$password', 1)";
 		mysqli_query($db, $query);
 		$_SESSION['username'] = $username;
+		// sukuria folderi su $username folderyje /users
+		mkdir('../users/' . $username, true);
 		$_SESSION['success'] = "You are now logged in";
 		header('location: dashboard.php');
 	}
